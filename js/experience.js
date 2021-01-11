@@ -1,6 +1,7 @@
 var app=new Vue({
     el:"#experience-list",
     data:{
+        "years":["2020","2019","2018","2017 / 2015","2014"],
         "experiences":[
             {
                 "place":"Centro de Investigación Científica y de Educación Superior de Ensenada Unidad de Transferencia Tecnológica de Tepic (CICESE-UT³)",
