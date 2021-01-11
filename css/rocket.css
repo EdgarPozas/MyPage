@@ -1,0 +1,14 @@
+.rocket-container
+{
+    position: fixed;
+    bottom: 20%;
+    margin-left: 14.2%;
+    animation-name: move-rocket;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes move-rocket {
+    from{bottom: 20%;}
+    to{bottom: 30%;}
+}

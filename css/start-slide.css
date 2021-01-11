@@ -1,0 +1,43 @@
+.background-start
+{
+    background: #012a4a url("../images/bk_estrellas.png") fixed;
+}
+
+.content-start
+{
+    font-size:20px;
+    color:#ddd;
+    line-height: 1.5;
+}
+.content-start-bold
+{
+    color:#ffab00;
+}
+.container-buttons
+{
+    display: flex;
+}
+.btn
+{
+    background-color: #173F5F;
+}
+.btn
+{
+    background-color: #173F5F;
+    padding: 2%;
+    margin: 0 2% 0 0;
+    color:white;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+.btn-outline
+{
+    border-style: solid;
+    background-color: inherit;;
+    border-color:#173F5F;
+    color:#173F5F;
+}
+.btn:hover
+{
+    transform: scale(1.1);
+}

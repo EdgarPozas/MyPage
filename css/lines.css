@@ -1,0 +1,11 @@
+.line
+{
+    padding-right:3px;
+    margin:0 6%;
+    background-color: #d3d3d3;
+    /* background: linear-gradient(to bottom right, #, #2C698D); */
+}
+.margin-line-top
+{
+    margin-top:10%;
+}

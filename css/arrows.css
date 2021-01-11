@@ -1,0 +1,16 @@
+.main-arrow
+{
+    transform: rotate(-90deg);
+    height: 41px;
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.4));
+    animation-name: move-arrow;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top:2%;
+    margin-right: 3%;
+}
+@keyframes move-arrow {
+  from {margin-left: -4%;}
+  to {margin-left: -6%;}
+}
