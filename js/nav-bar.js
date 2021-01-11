@@ -3,34 +3,29 @@ var app=new Vue({
     data:{
         "items":[
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Inicio",
+                "url":"#start",
+                "img":"home"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Experiencia",
+                "url":"#experience",
+                "img":"work"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Educación",
+                "url":"#education",
+                "img":"education"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Habilidades",
+                "url":"#habilities",
+                "img":"skills"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
-            },
-            {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Reconocimientos",
+                "url":"#awards",
+                "img":"awards"
             }
         ]
     }

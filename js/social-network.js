@@ -3,34 +3,24 @@ var app=new Vue({
     data:{
         "networks":[
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"edgar730a@gmail.com",
+                "url":"",
+                "img":"email"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Github",
+                "url":"https://github.com/EdgarPozas",
+                "img":"github"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"LinkedIn",
+                "url":"https://www.linkedin.com/in/EdgarPozas",
+                "img":"linkedin"
             },
             {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
-            },
-            {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
-            },
-            {
-                "title":"Programación web",
-                "url":"place",
-                "img":"web"
+                "title":"Platzi",
+                "url":"https://platzi.com/p/EdgarPozas/",
+                "img":"platzi"
             }
         ]
     }

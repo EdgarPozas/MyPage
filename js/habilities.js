@@ -1,5 +1,5 @@
 var app=new Vue({
-    el:"#habilities-list",
+    el:"#habilities",
     data:{
         "habilities":[
             {
@@ -20,7 +20,7 @@ var app=new Vue({
             },
             {
                 "title":"Gestión y manejo de bases de datos",
-                "stars":[1,1,0,0]
+                "stars":[1,1,1,0]
             },
             {
                 "title":"Redes de computadoras",
