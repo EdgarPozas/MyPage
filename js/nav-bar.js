@@ -13,6 +13,11 @@ var app=new Vue({
                 "img":"work"
             },
             {
+                "title":"Portafolio",
+                "url":"#portfolio",
+                "img":"portfolio"
+            },
+            {
                 "title":"Educación",
                 "url":"#education",
                 "img":"education"

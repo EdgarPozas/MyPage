@@ -68,6 +68,19 @@
                         </ul>
                     </div>
                 </div>
+                <div class="box text-left" id="portfolio">
+                    <h1 class="font-primary">Portafolio</h1>
+                    <hr>
+                    <div class="d-flex flex-wrap">
+                        <div class="portfolio-item" v-for="item in items">
+                            <a :href=item.url>
+                                <img :src=item.img alt="Image" class="w-100"/>
+                                <h3 class="color-primary">{{item.title}}</h3>
+                                <p>{{item.content}}</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="box text-left" id="education">
                     <h1 class="font-primary">Educación</h1>
                     <hr>
@@ -168,6 +181,7 @@
         <script src="./js/nav-bar.js"></script>
         <script src="./js/social-network.js"></script>
         <script src="./js/experience.js"></script>
+        <script src="./js/portfolio.js"></script>
         <script src="./js/habilities.js"></script>
         <script src="./js/awards.js"></script>
         <script src="./js/resources.js"></script>

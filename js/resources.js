@@ -73,7 +73,11 @@ var app=new Vue({
             {
                 "title":"Platzi image",
                 "url":"https://img.apksum.com/1f/com.platzi.platzi/40.3/icon.png"
-            }
+            },
+            {
+                "title":"Extensions Folder icon by Icons8",
+                "url":"https://icons8.com/icon/12989/extensions-folder"
+            },
 
         ]
     }
