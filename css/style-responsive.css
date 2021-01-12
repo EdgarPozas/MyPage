@@ -1,0 +1,368 @@
+@media screen and (max-width: 728px)
+{
+    body
+    {
+        font-size: 25px;
+    }
+    h3
+    {
+        font-size:1em;
+    }
+    .container-master
+    {
+        display: block;
+        margin:3% 5%;
+    }
+    .container-left
+    {
+        width: 100%;
+    }
+    .container-center
+    {
+        width: 100%;
+    }
+    .container-right
+    {
+        width:100%;
+    }
+    .img-profile
+    {
+        height: 237px;
+    }
+    .name-profile
+    {
+        font-size: 25px;
+    }
+    .position-profile
+    {
+        font-size: 20px;
+    }
+    .btn-container
+    {
+        flex-direction:column;
+    }
+    .btn
+    {
+        text-align:center;
+        margin-top: 5%;
+    }
+    .experience-container
+    {
+        display:block;
+    }
+    .skill-container
+    {
+        display:block;
+    }
+    .experience-list-item>h4
+    {
+        margin:0;
+    }
+    .portfolio-item
+    {
+        margin:0;
+    }
+    .portfolio-item>a>h3
+    {
+        font-size:20px;
+    }
+    .container-head-table
+    {
+        display: block;
+    }
+    .table-desktop
+    {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .table-phone
+    {
+        visibility: visible;
+        height: auto;
+    }
+    .courses-container
+    {
+        display: block;
+    }
+    #resources>ul
+    {
+        font-size:15px;
+    }
+    .line-rocket
+    {
+        left:50%;
+    }
+    .rocket
+    {
+        left:50%;
+    }
+    @keyframes rocket
+    {
+        0%
+        {
+            bottom: 20%;
+        }
+        25%
+        {
+            left:40%;
+        }
+        50%
+        {
+            left: 30%
+        }
+        100%
+        {
+            bottom: 30%;
+        }
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px)
+{
+    .img-profile
+    {
+        height: 200px;
+        width: 66%;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 728px)
+{
+    .img-profile
+    {
+        height: 220px;
+        width: 62%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 728px)
+{
+    .img-profile
+    {
+        height: 240px;
+        width: 62%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 728px)
+{
+    .img-profile
+    {
+        height: 280px;
+        width: 52%;
+    }
+}
+@media screen and (min-width: 728px)  and (max-width: 1240px)
+{
+    .container-master
+    {
+        margin: 3% 5%;
+    }
+    .img-profile
+    {
+        width: 74%;
+        height: 95px;
+    }
+    h1
+    {
+        font-size:20px;
+    }
+    h3
+    {
+        font-size:15px;
+    }
+    .container-right
+    {
+        width:6%;
+        right: 5%;
+    }
+    .line-rocket
+    {
+        left:15%;
+    }
+    .rocket
+    {
+        left:9%;
+    }
+    @keyframes rocket
+    {
+        0%
+        {
+            bottom: 20%;
+        }
+        25%
+        {
+            left:5%;
+        }
+        50%
+        {
+            left: 10%
+        }
+        100%
+        {
+            bottom: 30%;
+        }
+    }
+    .experience-container
+    {
+        display: block;
+    }
+    .experience-list-item
+    {
+        margin:1%;
+    }
+    .experience-list-item>img
+    {
+        width: 30px;
+        height: 30px;
+    }
+    .experience-list-item>h4
+    {
+        margin:0;
+    }
+    .table-desktop
+    {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .table-phone
+    {
+        visibility: visible;
+        height: auto;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1240px)
+{
+    .img-profile
+    {
+        width: 74%;
+        height: 120px;
+    }
+    .table-phone
+    {
+        visibility: hidden;
+        height: 0;
+    }
+    .table-desktop
+    {
+        visibility: visible;
+        height: auto;
+        width:100%;
+    }
+    .body-table>img
+    {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (min-width: 1700px)
+{
+    body
+    {
+        font-size: 25px;
+    }
+    .font-primary
+    {
+        font-size:70px;
+    }
+    .img-profile
+    {
+        width: 75%;
+        height: 200px;
+    }
+    .experience-container
+    {
+        display: block;
+    }
+}
+@media screen and (min-width: 2200px)
+{
+    body
+    {
+        font-size: 35px;
+    }
+    .font-primary
+    {
+        font-size:90px;
+    }
+    .img-profile
+    {
+        width: 75%;
+        height: 300px;
+    }
+    .experience-list-item>img
+    {
+        width:90px;
+        height: 90px;
+    }
+    .body-table>img
+    {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* @media screen and (min-width: 1800px)
+{
+    body
+    {
+        font-size: 25px;
+    }
+    .container-center
+    {
+        width: 60%;
+    }
+    .container-right
+    {
+        right: 17%;
+    }
+    .img-profile
+    {
+        height: 350px;
+    }
+    .rocket
+    {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        font-size: 18px;
+    }
+    .container-master
+    {
+        margin: 3% 5%;
+    }
+    .container-left
+    {
+        width: 40%;
+    }
+    .container-center
+    {
+        width: 90%;
+    }
+    .container-right
+    {
+        width: 6%;
+    }
+    .name-profile
+    {
+        font-size: 20px;
+    }
+    .img-profile
+    {
+        height: 240px;
+    }
+    #social-network>li>a>label
+    {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1100px)
+{
+    .img-profile
+    {
+        height: 160px;
+    }
+} */

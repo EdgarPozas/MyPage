@@ -29,7 +29,7 @@ var app=new Vue({
         ],
         "extras":[
             {
-                "title":"Cerficaciones",
+                "title":"Extras",
                 "elements":[
                     "VII Workshop Internacional en Imagen Médica e Integración de Datos clínicos, A Coruña, España.",
                     "International Workshop: From Cheminformatics to Creativity, A Coruña, España.",

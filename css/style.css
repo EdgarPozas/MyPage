@@ -104,6 +104,10 @@ h1
 {
     margin:0;
 }
+.m-auto
+{
+    margin:auto;
+}
 .flex-wrap
 {
     flex-wrap: wrap;
@@ -133,6 +137,9 @@ h1
     margin: auto;
     width: 100%;
     text-align: left;
+    height: 3em;
+    line-height: 1.5em;
+    overflow: hidden;
 }
 
 /*Initial*/
@@ -199,6 +206,7 @@ h1
     padding: 5%;
     border-radius: 5px;
     transition: transform .2s;
+    width:100%;
 }
 .portfolio-item:hover
 {
@@ -207,7 +215,16 @@ h1
 
 
 /*Habilities*/
-
+.table-desktop
+{
+    visibility: visible;
+    height: auto;
+}
+.table-phone
+{
+    visibility: hidden;
+    height: 0;
+}
 .head-table
 {
     width: 100%;
@@ -254,7 +271,7 @@ h1
 /*navbar*/
 #nav-bar>li
 {
-    margin-bottom: 100%;
+    margin-bottom: 60%;
     transition: transform .2s;
 }
 #nav-bar>li:hover

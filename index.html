@@ -8,8 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Edgar Pozas | Desarrollador de software | Curriculum & Contacto</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style-responsive.css">
     </head>
     <body>
 
@@ -18,7 +19,7 @@
                 <div class="box">
                     <img src="./images/me.png" class="img-profile">
                     <h1 class="name-profile color-primary">Edgar Efrén Pozas Bogarín</h1>
-                    <h3>Desarrollador de aplicaciones</h3>
+                    <h3 class="position-profile">Desarrollador de aplicaciones</h3>
                 </div>
                 <div class="box">
                     <h3 class="color-primary">Contacto</h3>
@@ -37,7 +38,7 @@
                 <div class="box text-left" id="start">
                     <h1 class="font-primary">¡Hola!,</h1>
                     <p>Soy <b class="color-primary">Edgar Pozas</b> un desarrollador de aplicaciones <b class="color-primary">multiplataforma</b> con <b class="color-primary">cinco años</b> de experiencia en el desarrollo de <b class="color-primary">software</b>. Cuento con  <b class="color-primary">experiencia, certificados y proyectos personales</b> que avalan mi conocimiento. ¿Quieres saber un poco <b class="color-primary">más</b>?</p>
-                    <div class="d-flex">
+                    <div class="d-flex btn-container">
                         <a href="./static/CV_Edgar_Efren_Pozas_Bogarin.pdf" class="btn">Ver curriculum</a>
                         <a href="#portfolio" class="btn btn-outline">Ir al portafolio</a>
                     </div>
@@ -51,7 +52,7 @@
                         <ul  class="experience-list">
                             <li v-for="(experience,index) in experiences.filter(x=>x.year==year)">
                                 <h3 class="text-left color-primary">{{experience.place}}</h3>
-                                <div class="d-flex">
+                                <div class="d-flex experience-container">
                                     <div>
                                         <h3>{{experience.position}}</h3>
                                         <p>{{experience.period}}</p>
@@ -97,19 +98,36 @@
                 </div>
                 <div class="box text-left text-center" id="habilities">
                     <h1 class="font-primary text-left">Habilidades</h1>
-                    <div class="d-flex">
-                        <p class="head-table color-primary font-bold">Habilidad</p>
-                        <p class="head-table color-primary font-bold">Principiante</p>
-                        <p class="head-table color-primary font-bold">Intermedio</p>
-                        <p class="head-table color-primary font-bold">Intermedio - Avanzadado</p>
-                        <p class="head-table color-primary font-bold">Avanzado</p>
+                    <div class="table-desktop">
+                        <div class="d-flex container-head-table">
+                            <p class="head-table color-primary font-bold">Habilidad</p>
+                            <p class="head-table color-primary font-bold">Básico</p>
+                            <p class="head-table color-primary font-bold">Intermedio</p>
+                            <p class="head-table color-primary font-bold">Intermedio - Avanzado</p>
+                            <p class="head-table color-primary font-bold">Avanzado</p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="d-flex" v-for="hability in habilities">
+                            <p class="body-table font-bold color-primary">{{hability.title}}</p>
+                            <p class="body-table" v-for="star in hability.stars">
+                                <img v-if="star==1" src="./images/star_circle.png" alt="Star" height="40"/>
+                            </p>
+                        </div>
                     </div>
-                    <hr class="m-0">
-                    <div class="d-flex" v-for="hability in habilities">
-                        <p class="body-table font-bold color-primary">{{hability.title}}</p>
-                        <p class="body-table" v-for="star in hability.stars">
-                            <img v-if="star==1" src="./images/star_circle.png" alt="Star" height="40"/>
-                        </p>
+                    <div class="table-phone">
+                        <div v-for="hability in habilities">
+                            <p class="font-bold color-primary">{{hability.title}}</p>
+                            <div class="d-flex text-center">
+                                <div class="body-table m-auto" v-for="star in hability.stars">
+                                    <img v-if="star==1" src="./images/star_circle.png" alt="Star" height="40"/>
+                                </div>
+                            </div>
+                            <p v-if="hability.stars.filter(x=>x==1).length==1">Básico</p>
+                            <p v-if="hability.stars.filter(x=>x==1).length==2">Intermedio</p>
+                            <p v-if="hability.stars.filter(x=>x==1).length==3">Intermedio - Avanzado</p>
+                            <p v-if="hability.stars.filter(x=>x==1).length==4">Avanzado</p>
+                            <hr>
+                        </div>
                     </div>
                 </div>
                 <div class="box text-left" id="awards">
@@ -127,7 +145,7 @@
                     <div v-for="course in courses">
                         <h2 class="text-right color-primary">{{course.title}} <a href="https://platzi.com/p/EdgarPozas/" class="color-extra">Platzi</a>)</h2>
                         <hr>
-                        <div class="d-flex text-center">
+                        <div class="d-flex text-center courses-container">
                             <ul class="w-100">
                                 <li v-for="element in course.elements_left">
                                     <h3 class="color-primary">{{element}}</h3>
@@ -169,9 +187,21 @@
         <div class="footer text-center" id="resources">
             <h2>Recursos de terceros utilizados</h2>
             <ul class="d-flex">
-                <li v-for="resource in resources" >
-                    <a :href=resource.url class="color-white">{{resource.title}}</a>
-                </li>
+                <div class="m-auto">
+                    <li v-for="resource in resources.slice(0,6)">
+                        <a :href=resource.url class="color-white">{{resource.title}}</a>
+                    </li>
+                </div>
+                <div class="m-auto">
+                    <li v-for="resource in resources.slice(6,12)">
+                        <a :href=resource.url class="color-white">{{resource.title}}</a>
+                    </li>
+                </div>
+                <div class="m-auto">
+                    <li v-for="resource in resources.slice(12,19)">
+                        <a :href=resource.url class="color-white">{{resource.title}}</a>
+                    </li>
+                </div>
             </ul>
             <p>Desarrollado por <b>Edgar Efrén Pozas Bogarín 2020</b></p>
         </div>
