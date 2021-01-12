@@ -224,6 +224,7 @@ h1
 {
     visibility: hidden;
     height: 0;
+    width: 0;
 }
 .head-table
 {
